@@ -42,7 +42,7 @@ Exemplo:
 def first_numbers(num):
     if num > 0:
         result = unid[num]
-    else num < 0:
+    elif num < 0:
         num = num * (-1)
         result = "menos " + unid[num]
     return result
@@ -59,7 +59,7 @@ def two_numbers(num):
             a = num // 10
             b = num % 10    # parte restante da divisão por 10
             result = dezen[a] + " e " + unid[b]
-    else num < 0: 
+    elif num < 0: 
         (...)
 ```
 E a partir da casa das centenas, vamos começar a reutilizar as funções declaradas anteriormente:
