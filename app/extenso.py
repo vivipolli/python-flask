@@ -6,7 +6,7 @@ app = Flask(__name__)
 unid = ("zero", "um", "dois", "três", "quatro",
         "cinco", "seis", "sete", "oito",
         "nove", "dez", "onze", "doze", "treze", "quatorze", "quinze",
-        "dezesseis", "dezesete", "dezoito", "dezenove")
+        "dezesseis", "dezessete", "dezoito", "dezenove")
 dezen = ["", "", "vinte", "trinta", "quarenta",
          "cinquenta", "sessenta", "setenta", "oitenta", "noventa"]
 centen = ["", "cem", "duzentos", "trezentos", "quatrocentos", "quinhentos",
