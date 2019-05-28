@@ -9,7 +9,7 @@ unid = ("zero", "um", "dois", "três", "quatro",
         "dezesseis", "dezessete", "dezoito", "dezenove")
 dezen = ["", "", "vinte", "trinta", "quarenta",
          "cinquenta", "sessenta", "setenta", "oitenta", "noventa"]
-centen = ["", "cem", "duzentos", "trezentos", "quatrocentos", "quinhentos",
+centen = ["cem", "cento", "duzentos", "trezentos", "quatrocentos", "quinhentos",
           "seiscentos", "setecentos", "oitocentos", "novecentos"]
 
 
@@ -34,7 +34,7 @@ def two_numbers(num):
 def three_numbers(num):
     if num % 100 == 0:
         a = num // 100
-        result = centen[a]
+        result = centen[0]
     else:
         a = num // 100
         b = num % 100
