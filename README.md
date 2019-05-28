@@ -3,7 +3,7 @@ Este é um pequeno servidor http usando Flask para converter um número inteiro 
 
 Exemplo:
 ```
-$ curl http://localhost:3000/-1042
+$ curl http://localhost:5050/-1042
 { "extenso": "menos mil e quarenta e dois" }
 ```
 ## Requisitos
