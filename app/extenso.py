@@ -10,13 +10,13 @@ unid = ("zero", "um", "dois", "três", "quatro",
 dezen = ["", "", "vinte", "trinta", "quarenta",
          "cinquenta", "sessenta", "setenta", "oitenta", "noventa"]
 centen = ["", "cem", "duzentos", "trezentos", "quatrocentos", "quinhentos",
-          "seicentos", "setecentos", "oitocentos", "novecentos"]
+          "seiscentos", "setecentos", "oitocentos", "novecentos"]
 
 
 def first_numbers(num):
     if num > 0:
         result = unid[num]
-    elif num < 0:
+    else:
         num = num * (-1)
         result = "menos " + unid[num]
     return result
@@ -31,7 +31,7 @@ def two_numbers(num):
             a = num // 10
             b = num % 10
             result = dezen[a] + " e " + unid[b]
-    elif num < 0:
+    else:
         if num % 10 == 0:
             num = num * (-1)
             a = num // 10
@@ -116,7 +116,7 @@ def four_numbers(num):
 
 @app.route('/<int(signed=True):num>', methods=['GET'])
 def funcname(num):
-    if 0 <= num < 20 or -20 <= num < 0:
+    if 0 <= num < 20 or -20 < num < 0:
         result = first_numbers(num)
     elif 20 <= num <= 99 or -99 <= num <= -20:
         result = two_numbers(num)
