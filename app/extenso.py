@@ -63,7 +63,7 @@ def four_numbers(num):
             tpl = two_numbers(a)
         rest = num % 1000
         c = three_numbers(rest)
-        result = tpl + " mil" + " e " + c
+        result = tpl + " mil" + c
 
     return result
 
