@@ -69,7 +69,7 @@ def four_numbers(num):
 
 
 @app.route('/<int(signed=True):num>', methods=['GET'])
-def funcname(num):
+def input_func(num):
     if 0 <= num < 20 or -20 < num < 0:
         if num > 0:
             result = first_numbers(num)
